@@ -1,0 +1,38 @@
+{
+  "name": "blazervel/deploy",
+  "description": "Deploy tools for Laravel & Blazervel",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Joshua Anderton",
+          "email": "hey@joshuaanderton.ca"
+      }
+  ],
+  "require": {
+      "php": "^8.0",
+      "illuminate/support": "^8.67|^9.0"
+  },
+  "require-dev": {
+      "phpunit/phpunit": "^9.3"
+  },
+  "autoload": {
+      "psr-4": {
+          "Blazervel\\Deploy\\": "src"
+      }
+  },
+  "autoload-dev": {
+      "psr-4": {
+          "Blazervel\\Deploy\\Tests\\": "tests"
+      }
+  },
+  "config": {
+      "sort-packages": true
+  },
+  "extra": {
+      "laravel": {
+          "providers": [
+              "Blazervel\\Deploy\\Providers\\ServiceProvider"
+          ]
+      }
+  }
+}
